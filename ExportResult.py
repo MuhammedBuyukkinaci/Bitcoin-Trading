@@ -60,3 +60,4 @@ class ExportResult:
             self.create_html_table()
             yag = SMTP(self.connector.sender_email, self.connector.sender_password)
             yag.send(self.connector.receiver_email, subject_of_mail, self.mail_html)
+

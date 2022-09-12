@@ -32,3 +32,4 @@ class Connector:
                                            port=self.database_port,
                                            database=self.database_name)
         self.cursor = self.connection.cursor()
+

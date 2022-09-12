@@ -30,6 +30,8 @@ def main():
         export_result.send_email()
         # Always inserting the record to DB
         export_result.insert_record_to_db()
+        # Send Daily E-mail on latest results
+        export_result.send_daily_results()
     else:
         print("data quality problem")
     # Garbage Collector
